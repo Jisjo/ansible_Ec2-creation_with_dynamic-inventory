@@ -125,7 +125,7 @@
 
 ############### Play book #######################
 
-- name: "Creating Virtualhost"
+- name: "Hosting HTML Website"
   become: true
   hosts: webserver
   vars:
