@@ -2,14 +2,10 @@
 
 - name: "Ec2 creation"
   hosts: localhost
-  vars:
-    keypair_name: "ansible-remote-key"
-    access_key: "xxxxxxxxxxxxxxxx"
-    secret_key: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    region: "us-east-2"
-    sg1: "ansible-remote"
-    sg2: "ansible-webserver"
-    ami_id: ami-002068ed284fb165b
+  vars_files:
+    - 01-01-access-key.vars
+    - 01-02-ec2.vars
+    
   tasks:
     - name: "AWS - Creating Ssh KeyPair"
       ec2_key:
@@ -123,16 +119,14 @@
 
 
 
-############### Play book #######################
+############### Play for website setup #######################
 
 - name: "Hosting HTML Website"
   become: true
   hosts: webserver
-  vars:
-    httpd_port: 80
-    httpd_user: "apache"
-    httpd_group: "apache"
-    domain_name: "www.abc.com"
+  vars_files:
+    - 01-03-webserver.vars
+
   tasks:
 
     - name: "Installing Apache"
