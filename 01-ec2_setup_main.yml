@@ -4,8 +4,8 @@
   hosts: localhost
   vars:
     keypair_name: "ansible-remote-key"
-    access_key: "AKIAVOYUBUYWFSWREDN5"
-    secret_key: "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"
+    access_key: "xxxxxxxxxxxxxxxx"
+    secret_key: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     region: "us-east-2"
     sg1: "ansible-remote"
     sg2: "ansible-webserver"
