@@ -14,6 +14,11 @@ In this demo, we will be provisioning the following :
 
 - Access key and secret key for AWS IAM user with administrator access.
 - Install Ansible on your machine (ansible master).
+- Install python module boto, boto3 and botocore on ansible master server.
+> Thses module help ansible to do  Python API for AWS infrastructure services to perfom its task.
+```
+pip2 install boto boto3 botocore
+```
 
 ---
 
