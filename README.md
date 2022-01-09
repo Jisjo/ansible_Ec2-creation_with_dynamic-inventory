@@ -212,3 +212,20 @@ In this demo, we will be provisioning the following :
         state: restarted
         enabled: true
 ```
+
+## Usage
+
+Clone the repository using the below command
+```
+git clone https://github.com/Freeda-F/ansible-ec2-httpd.git
+```
+    Then, make the required changes in above mentioned files for variables and Finally, you can run the ansible playbook using the command
+```
+ansible-playbook 01-ec2_setup_main.yml 
+```
+
+## Result
+
+Now our web server has been configured and we can visit our website using the public IP or domain name.
+
+![image](https://github.com/Jisjo/ansible_Ec2-creation_with_dynamic-inventory/blob/main/Screenshot-01-ec2-ansible.png)
