@@ -217,7 +217,7 @@ In this demo, we will be provisioning the following :
 
 Clone the repository using the below command
 ```
-git clone https://github.com/Freeda-F/ansible-ec2-httpd.git
+git clone https://github.com/Jisjo/ansible_Ec2-creation_with_dynamic-inventory.git
 ```
     Then, make the required changes in above mentioned files for variables and Finally, you can run the ansible playbook using the command
 ```
